@@ -757,7 +757,7 @@ label {
 /* 04 Header Css */
 .logo-wrap img {
   width: 100%;
-  max-width: 165px;
+  max-width: 200px;
 }
 
 .logo-wrap-2 {
@@ -784,7 +784,7 @@ label {
   }
 }
 .logo-wrap-2 img {
-  max-width: 165px;
+  max-width: 200px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .logo-wrap-2 img {
@@ -1828,7 +1828,7 @@ label {
 }
 .off-canvas-sidebar .off-canvas-logo img {
   width: 100%;
-  max-width: 165px;
+  max-width: 240px;
 }
 
 .off-canvas-sidebar-overlay {
@@ -13997,7 +13997,7 @@ label {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 380px 0 220px;
+  padding: 200px 0 200px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .dust-recycling-section {
@@ -18867,6 +18867,10 @@ label {
 .blog-tags .socials .social-links a:hover {
   background: var(--theme-color-3);
   color: var(--theme-color-2);
+}
+
+.footer-contact-info p{
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
