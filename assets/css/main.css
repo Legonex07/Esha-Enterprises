@@ -14146,7 +14146,7 @@ label {
   backdrop-filter: blur(46.2px);
   border-radius: 16px;
   padding: 50px;
-  max-width: 716px;
+  /* max-width: 716px; */
   width: 100%;
   margin-bottom: -170px;
 }
@@ -14168,7 +14168,7 @@ label {
 }
 .dust-recycle-card .dust-recycle-top {
   padding-bottom: 30px;
-  border-bottom: 1px solid var(--light-color);
+  border-bottom: 1px solid #959595;
 }
 .dust-recycle-card .dust-recycle-top h5 {
   font-weight: 500;
