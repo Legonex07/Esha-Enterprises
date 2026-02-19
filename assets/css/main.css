@@ -18873,4 +18873,137 @@ label {
   color: white;
 }
 
+/* Sticky Header CSS */
+.header-section-4 {
+  position: relative;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-section-4.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.35s ease-out;
+  z-index: 9999;
+}
+
+.header-section-4.sticky-header .top-bar {
+  display: none !important;
+}
+
+.header-section-4.sticky-header .header-bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive sticky header adjustments */
+@media (max-width: 1199px) {
+  .header-section-4.sticky-header .header-bottom {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-section-4.sticky-header .logo-wrap img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-section-4.sticky-header .header-bottom {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .header-section-4.sticky-header .logo-wrap img {
+    max-width: 100px;
+  }
+  
+  .header-section-4.sticky-header .header-bar .bar {
+    width: 22px;
+  }
+}
+
+/* Add body padding when header is fixed to prevent content jump */
+body.header-sticky {
+  padding-top: 80px;
+}
+
+@media (max-width: 767px) {
+  body.header-sticky {
+    padding-top: 60px;
+  }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: var(--theme-color);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all 0.3s ease-in-out;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+  background: var(--theme-color-3);
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

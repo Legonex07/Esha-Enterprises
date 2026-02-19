@@ -80,14 +80,28 @@
     --------------------------------------------------------------*/
 
     let win = $(window);
-    let sticky_id = $(".header-area");
+    let sticky_id = $(".header-section-4, .header-area");
+    let backToTop = $('#back-to-top');
+    
     win.on('scroll', function () {
         let scroll = win.scrollTop();
-        if (scroll < 245) {
+        if (scroll < 100) {
             sticky_id.removeClass("sticky-header");
+            $('body').removeClass("header-sticky");
+            backToTop.removeClass("active");
         } else {
             sticky_id.addClass("sticky-header");
+            $('body').addClass("header-sticky");
+            backToTop.addClass("active");
         }
+    });
+
+    // Back to Top Click Handler
+    backToTop.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 600);
     });
 
     /*--------------------------------------------------------------
