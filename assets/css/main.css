@@ -19006,4 +19006,13 @@ body.header-sticky {
   }
 }
 
+/* Hide logo in off-canvas side panel */
+.off-canvas-logo {
+  display: none;
+}
+
+.off-canvas-menubar .off-canvas-head {
+  justify-content: flex-end;
+}
+
 /*# sourceMappingURL=main.css.map */
